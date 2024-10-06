@@ -1,5 +1,5 @@
 #include "libft.h"
-size_t strlen(const char *s)
+size_t ft_strlen(const char *s)
 {
   int i = 0;
   while (s[i])

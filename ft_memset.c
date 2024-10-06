@@ -4,16 +4,12 @@
 void *ft_memset(void *s, int c, size_t n)
 {
     unsigned char *ptr = (unsigned char *)s;
-    size_t i = -1;
+    size_t i = 0;
 
-    while (++i < n)
+    while (i < n)
+    {
         ptr[i] = (unsigned char)c;
+        i++;
+    }
     return s;
-}
-
-int main()
-{
-    char str[] = "Hello World!";
-    printf("%s\n", (char *)ft_memset(str, 'a', 6));
-    return 0;
 }
